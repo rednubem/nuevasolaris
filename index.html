@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva Solaris</title>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("SDWEQLJN61uTtfZ_C"); // Reemplazado con tu Public Key
+        })();
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .banner {
+            text-align: center;
+            background-color: #f8f8f8;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        .main-image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .main-image {
+            width: 100%;
+            max-width: 600px;
+            cursor: pointer;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .gallery img {
+            width: calc(25% - 10px);
+            cursor: pointer;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+        }
+        .contact-form {
+            margin-top: 20px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f8f8f8;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .captcha {
+            margin-bottom: 15px;
+        }
+        .button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .button.reset {
+            background-color: #f44336;
+        }
+        .button.reset:hover {
+            background-color: #e53935;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Banner -->
+    <div class="banner">
+        <div class="logo">Nueva Solaris</div>
+    </div>
+
+    <!-- Contenedor de la imagen y leyenda -->
+    <div class="main-image-container">
+        <img src="https://i.postimg.cc/SRqfSG2D/Foto-Inicio.jpg" alt="Imagen de Energía Solar" class="main-image" onclick="showInfo('info-inicio')">
+    </div>
+
+    <!-- Texto debajo de la imagen en la página de inicio -->
+    <div class="inicio-texto">
+        <p>
+            Nueva Solaris está comprometida con el medio ambiente, mejorando la huella de carbono, promoviendo la ecología y cuidando la flora y fauna con dedicación y respeto. Nuestra misión es proteger el planeta y garantizar un futuro sostenible para las próximas generaciones. Con iniciativas verdes y prácticas responsables, buscamos hacer una diferencia significativa en la preservación de la naturaleza. Únete a nosotros en este viaje hacia un mundo más limpio y saludable.
+        </p>
+    </div>
+
+    <!-- Secciones para navegar -->
+    <section id="inicio">
+        <h2>Bienvenido a Nueva Solaris</h2>
+        <p>Nueva Solaris es una empresa con 10 años, especializada en calcular e instalar proyectos solares conectados y aislados de la red. Nuestro equipo también instala cargadores para autos eléctricos y postes solares. Contamos con los profesionales idóneos para llevar a cabo los trabajos que el cliente necesita. No dude en contactarnos para conocer más sobre nuestras soluciones de energía. Garantizamos un ahorro de energía significativo y un impacto positivo en el medio ambiente. La energía sostenible y limpia es nuestra misión principal y nuestra pasión. Confíe en nuestra experiencia y compromiso con la calidad y la innovación. Proyectos solares en manos de expertos para asegurar su satisfacción y tranquilidad. Nos enorgullece contribuir a un futuro más verde y sostenible para todos. Nuestra trayectoria nos avala como líderes en el sector energético en la V Región. Instalamos sistemas eficientes que proporcionan energía limpia y renovable. Estamos aquí para ayudarle a reducir su huella de carbono y su factura eléctrica. Con Nueva Solaris, la energía solar es una inversión inteligente y rentable.</p>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="proyectos">
+        <h2>Algunos Proyectos Nueva Solaris</h2>
+        <div class="gallery">
+            <img src="https://i.postimg.cc/2bn7CMbj/Proyecto-1.jpg" alt="Proyecto-1" onclick="openNewPage('INSTALACIÓN DE CARGADORES PARA VEHÍCULOS ELÉCTRICOS: CON LA INSTALACIÓN DE UN CARGADOR DE BATERÍA DE AUTO EN TU CASA, MEJORAS TU COMODIDAD Y ACCESIBILIDAD. ESTE PROYECTO EN LA V REGIÓN REDUCE LA NECESIDAD DE BUSCAR ESTACIONES DE CARGA PÚBLICAS.')">
+            <img src="https://i.postimg.cc/ZK7mk7XY/poste-solar-2222.jpg" alt="Proyecto-2" onclick="openNewPage('INSTALACIÓN DE POSTES SOLARES: IMPLEMENTAR UN PROYECTO EN LA V REGIÓN CON POSTES SOLARES EN ESTACIONAMIENTOS Y ÁREAS COMUNES ES ALTAMENTE BENEFICIOSO. ESTAS INSTALACIONES PROPORCIONAN ILUMINACIÓN SOSTENIBLE Y GRATUITA EN TU PROPIO EDIFICIO.')">
+            <img src="https://i.postimg.cc/4H5v9cQr/proyecto-3.jpg" alt="Proyecto-3" onclick="openNewPage('INSTALACIÓN DE SISTEMA SOLAR QUILLOTA: TENER UN SISTEMA SOLAR FOTOVOLTAICO EN TU PROPIO EDIFICIO O CASA PARTICULAR TIENE MÚLTIPLES VENTAJAS. EL PROYECTO EN LA V REGIÓN IMPULSA EL USO DE ENERGÍAS RENOVABLES, REDUCIENDO LA DEPENDENCIA DE COMBUSTIBLES FÓSILES.')">
+            <img src="https://i.postimg.cc/dLspSmpZ/proyecto-4.jpg" alt="Proyecto-4" onclick="openNewPage('INSTALACIÓN DE SISTEMA SOLAR OLMUÉ: CONTAR CON UN SISTEMA SOLAR FOTOVOLTAICO EN TU CASA PARTICULAR TIENE GRANDES VENTAJAS. EL PROYECTO EN LA V REGIÓN PERMITE APROVECHAR AL MÁXIMO EL SOL DE LA ZONA.')">
+            <img src="https://i.postimg.cc/c4mr6tL9/casa-paneles-solares-Colina-Chile.jpg" alt="Proyecto-5" onclick="openNewPage('INSTALACIÓN DE SISTEMA SOLAR COLINA: CONTAR CON UN SISTEMA SOLAR FOTOVOLTAICO EN TU CASA PARTICULAR TIENE GRANDES VENTAJAS. EL PROYECTO EN LA V REGIÓN PERMITE APROVECHAR AL MÁXIMO EL SOL DE LA ZONA.')">
+            <img src="https://i.postimg.cc/Sn5PR0sc/proyecto-6.jpg" alt="Proyecto-6" onclick="openNewPage('INSTALACIÓN DE SISTEMA SOLAR GALPÓN QUILLOTA: TENER UN SISTEMA SOLAR FOTOVOLTAICO EN TU PROPIO EDIFICIO O CASA PARTICULAR TIENE MÚLTIPLES VENTAJAS. EL PROYECTO EN LA V REGIÓN IMPULSA EL USO DE ENERGÍAS RENOVABLES, REDUCIENDO LA DEPENDENCIA DE COMBUSTIBLES FÓSILES.')">
+            <img src="https://i.postimg.cc/8jZ98fgK/proyecto-7.jpg" alt="Proyecto-7" onclick="openNewPage('INSTALACIÓN DE SISTEMA SOLAR QUILLOTA: TENER UN SISTEMA SOLAR FOTOVOLTAICO EN TU PROPIO EDIFICIO O CASA PARTICULAR TIENE MÚLTIPLES VENTAJAS. EL PROYECTO EN LA V REGIÓN IMPULSA EL USO DE ENERGÍAS RENOVABLES, REDUCIENDO LA DEPENDENCIA DE COMBUSTIBLES FÓSILES.')">
+            <img src="https://i.postimg.cc/vDLCzSqd/proyecto-8.jpg" alt="Proyecto-8" onclick="openNewPage('INSTALACIÓN DE SISTEMA SOLAR PICHILEMU: CONTAR CON UN SISTEMA SOLAR FOTOVOLTAICO EN TU CASA PARTICULAR TIENE GRANDES VENTAJAS. EL PROYECTO EN LA V REGIÓN PERMITE APROVECHAR AL MÁXIMO EL SOL DE LA ZONA.')">
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form class="contact-form" id="contact-form">
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div class="captcha">
+                <label id="captcha-label" for="captcha"></label>
+                <input type="text" id="captcha" name="captcha" required>
+            </div>
+            <div>
+                <button class="button" type="submit">Enviar</button>
+                <button class="button reset" type="button" onclick="resetForm()">Borrar</button>
+            </div>
+            <div id="form-message"></div>
+        </form>
+    </section>
+
+    <script>
+        let correctAnswer;
+
+        function generateCaptcha() {
+            const num1 = Math.floor(Math.random() * 10);
+            const num2 = Math.floor(Math.random() * 10);
+            correctAnswer = num1 + num2;
+            document.getElementById('captcha-label').textContent = `¿Cuánto es ${num1} + ${num2}?`;
+        }
+
+        function openNewPage(captionText) {
+            const newWindow = window.open("", "_blank");
+            newWindow.document.write(`
+                <html>
+                <head>
+                    <title>Leyenda del Proyecto</title>
+                    <style>
+                        body {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100vh;
+                            margin: 0;
+                            background-color: #f0f0f0;
+                        }
+                        .caption-container {
+                            background-color: yellow;
+                            border: 2px solid black;
+                            padding: 20px;
+                            max-width: 600px;
+                            text-align: center;
+                        }
+                        .caption {
+                            color: #00008B; /* Azul oscuro */
+                            font-size: 24px;
+                            text-transform: uppercase;
+                            line-height: 1.5;
+                        }
+                        .back-button {
+                            margin-top: 20px;
+                            padding: 10px 15px;
+                            background-color: #4CAF50;
+                            color: white;
+                            border: none;
+                            border-radius: 5px;
+                            cursor: pointer;
+                        }
+                        .back-button:hover {
+                            background-color: #45a049;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <div class="caption-container">
+                        <div class="caption">${captionText}</div>
+                    </div>
+                    <button class="back-button" onclick="window.close()">Volver</button>
+                </body>
+                </html>
+            `);
+        }
+
+        function resetForm() {
+            document.getElementById('contact-form').reset();
+            generateCaptcha();
+            document.getElementById('form-message').textContent = '';
+        }
+
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const captcha = document.getElementById('captcha').value;
+            const formMessage = document.getElementById('form-message');
+
+            if (parseInt(captcha) === correctAnswer) {
+                emailjs.sendForm('service_xz61orm', 'template_ix46i09', this)
+                    .then(function() {
+                        formMessage.textContent = 'Formulario enviado con éxito.';
+                        formMessage.style.color = 'green';
+                        generateCaptcha();
+                    }, function(error) {
+                        console.error("Error al enviar el formulario:", error);
+                        formMessage.textContent = 'Error al enviar el formulario. Inténtalo de nuevo.';
+                        formMessage.style.color = 'red';
+                    });
+            } else {
+                formMessage.textContent = 'Captcha incorrecto. Inténtalo de nuevo.';
+                formMessage.style.color = 'red';
+                generateCaptcha();
+            }
+        });
+
+        window.onload = generateCaptcha;
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.banner {
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.main-image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 600px;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+.info-content {
+    display: none;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.info-content.active {
+    display: block;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 1000px; /* Asegúrate de que el contenedor tenga suficiente ancho */
+    margin: 0 auto; /* Centrar la galería */
+}
+
+.gallery img {
+    width: calc(25% - 10px); /* Ajusta el ancho para que quepan 4 imágenes por fila */
+    cursor: pointer;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+.contact-form {
+    margin-top: 20px;
+    max-width: 500px; /* Ancho máximo del formulario */
+    margin-left: auto; /* Centrar horizontalmente */
+    margin-right: auto; /* Centrar horizontalmente */
+    padding: 20px;
+    border: 2px solid #FFD700; /* Amarillo para los bordes */
+    border-radius: 8px;
+    background-color: #FFD700; /* Amarillo para el cuerpo del formulario */
+    color: black; /* Texto negro para contraste */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333;
+    background-color: #ADD8E6; /* Azul suave para los campos de entrada */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    font-weight: bold; /* Texto en negritas */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #003d7a;
+    outline: none;
+}
+
+.captcha {
+    margin-bottom: 15px;
+}
+
+.button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.button.reset {
+    background-color: #f44336;
+}
+
+.button.reset:hover {
+    background-color: #e53935;
+}
